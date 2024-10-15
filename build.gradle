@@ -10,12 +10,17 @@ repositories {
 }
 
 dependencies {
+    annotationProcessor 'org.projectlombok:lombok:1.18.34'
+    compileOnly 'org.projectlombok:lombok:1.18.34'
     implementation "com.deliveredtechnologies:rulebook-core:${rulebookVersion}"
     implementation "org.apache.logging.log4j:log4j-slf4j-impl:${log4j2Version}"
     implementation "org.apache.logging.log4j:log4j-api:${log4j2Version}"
     implementation "org.apache.logging.log4j:log4j-core:${log4j2Version}"
+    testAnnotationProcessor 'org.projectlombok:lombok:1.18.34'
+    testCompileOnly 'org.projectlombok:lombok:1.18.34'
     testImplementation platform("org.junit:junit-bom:${jupiterBomVersion}")
     testImplementation 'org.junit.jupiter:junit-jupiter'
+    testImplementation 'org.hamcrest:hamcrest:3.0'
 }
 
 test {
