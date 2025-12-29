@@ -18,6 +18,7 @@ dependencies {
     implementation "org.apache.logging.log4j:log4j-core:${log4j2Version}"
     testAnnotationProcessor 'org.projectlombok:lombok:1.18.42'
     testCompileOnly 'org.projectlombok:lombok:1.18.42'
+    testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
     testImplementation platform("org.junit:junit-bom:${jupiterBomVersion}")
     testImplementation 'org.junit.jupiter:junit-jupiter'
     testImplementation 'org.hamcrest:hamcrest:3.0'
